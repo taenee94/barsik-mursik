@@ -1,0 +1,1426 @@
+@import url(style_cs.css);
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://forumstatic.ru/files/0015/94/f6/45116.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue Book';
+    src: url('https://forumstatic.ru/files/0015/94/f6/38871.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dewberry';
+    src: url('https://forumstatic.ru/files/0015/94/f6/30688.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('https://forumstatic.ru/files/0015/94/f6/75549.otf');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+}
+
+
+:root {
+--body: #252422;
+--main: #e9e9e9;
+--pun: #d9d8d6;
+--tabt: #bebebe;
+}
+
+
+
+/* Стили по умолчанию */
+
+img {border:none; }
+.punbb img.sigimage, .punbb .post-content img.postimg {
+    max-width: 100%; 
+    margin: 0.4em 0;
+}
+.punbb .main table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.section .container table {
+    text-align: start;
+    padding: 10px;
+}
+
+.section .container table thead tr th {
+        padding-bottom: 5px;
+    width: 60%;
+}
+
+.checkfield input[type="checkbox"], .radiofield input[type="radio"] {
+    margin: 0 0.3em;
+}
+p[class="checkfield"] *, div[class="checkfield"] *, fieldset[class="radiofield"] * {
+    height: 1.8em; 
+    vertical-align: middle;
+}
+.punbb address, .punbb em {
+    font-style: normal;
+}
+.punbb .post-content em {
+    font-style: italic;
+}
+.punbb .post-content em.bbuline {
+    font-style: normal; 
+    text-decoration: underline;
+}
+.punbb optgroup {
+    font-weight: bold;
+}
+.punbb * {
+    margin: 0 auto;
+}
+.punbb ul, .punbb dl, .punbb li, .punbb dd, .punbb dt {
+    padding: 0;
+    list-style: none;
+}
+.punbb .fs-box p, .punbb .fs-box fieldset {
+    padding: 0 0 0.8em 0;
+}
+.post-box .post-content p{
+    padding: 0 0 0.6em 0;
+}
+.lastedit {
+    display: none !important;
+}
+.post-content .spoiler-box > div {background:url('/img/plus.png') no-repeat left center; cursor:pointer; padding-left:18px}
+.post-content .spoiler-box > div.visible {background-image:url('/img/minus.png')}
+.post-content .spoiler-box > blockquote {padding-top:1.4em; display:none}
+.post-content .spoiler-box > blockquote.visible {display:block; overflow:auto}
+.post-content hr {opacity:0.5; filter:alpha(opacity=50); margin-bottom:0.8em}
+.post-content abbr {cursor:help}
+.scrollbox {overflow-y: auto;}
+
+.punbb .formal span.input {padding-right:0 !important}
+#formkey, #formetc {display:none}
+#color-area, #table-area, #keyboard-area {width:auto}
+#keyboard-area {text-align:center; padding-bottom:4px}
+#imageup-area {width:170px}
+#imageattach-area {width:770px; height:200px; padding:0px !important}
+#smilies-area, #video-area, #spoiler-area {width:450px}
+#image-area {width:550px}
+#color-area * {border:0}
+#color-area table {width:320px; height:20px; padding:0; margin:0}
+#table-area table {width:auto !important; padding:0; margin:0; border-collapse:collapse}
+#table-area div {margin-top:1em; text-align:center}
+#table-layout {margin-right:0.5em}
+#table-area td {background-color:#fff; width:20px; height:20px; border-width:1px !important; border-style:solid !important; border-color:#dadada !important}
+#table-area td.selected {background-color:#c8c8ff}
+#color-area td, #table-area td {margin:0; padding:0; line-height:0}
+#color-area td img, #table-area td img {width:20px; height:20px; cursor:pointer !important}
+#tags .container {position:absolute; right:20px; top:43px; z-index:2;}
+#font-area, #size-area {right: unset !important;}
+#font-area div, #size-area div, #color-area div, #table-area div, #addition-area div, #smilies-area div a, #smilies-area img {cursor:pointer !important}
+#font-area span, #font-area img, #size-area span, #size-area img {display:block; position:relative; top:0; left:0}
+#font-area span, #font-area img {height:15px}
+#size-area span, #size-area img {height:24px}
+#font-area span, #size-area span {padding:1px 0}
+#addition-area div {height:24px; vertical-align:middle}
+#font-area img {width:100%; margin-top:-15px}
+#size-area img {width:100%; margin-top:-24px}
+#keyboard-span {text-align:center; padding-bottom:10px; width:auto}
+#keyboard-span input {font-family:Arial, Helvetica, sans-serif; font-weight:300; font-size:13px; color:#666; background-color:#fff; margin:1px 1px 0 0; border:1px solid #ddd; cursor:pointer; height:25px; min-width:30px}
+#imageup-area input {font-size:0.8em}
+#imageup-area p {padding:0; margin:0}
+#imageup-title {margin-bottom:10px !important}
+#imageup-submit {margin-top:10px !important}
+#main-reply {width:100%}
+#pun-messages #post-form div.container {padding-left:2.3em}
+#similar-topics {margin-top:1em}
+#similar-topics div.container {padding-top:1.1em}
+#similar-topics td {border:0; padding:0}
+#similar-topics td.st-tcl {width:60%}
+#similar-topics td.st-tc2 {width:25%; padding-right:1em; text-align:right}
+#similar-topics td.st-tcr {width:15%; padding-right:1em; text-align:right}
+li.pa-ua {margin-top: 0.7em; display: flex; justify-content: center;}
+#pun-online .tcl.action {width:60%
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.punbb .post.new-ajax > * {border-width: 3px;}
+.punbb .post.new-ajax {display: none;}
+
+
+
+.acchide, #pun-index #pun-main h1, #pun-navlinks h2, #pun-pagelinks h2, #pun-status h2, #pun-ulinks h2, .punbb .forum h2, .punbb .multipage .topic h2, .punbb dl.post-sig dt span, .punbb p.crumbs strong, .punbb .divider hr, .punbb .required label em, .punbb .formsubmit label, .punbb .submitfield label, .punbb .modmenu label, #pun-userlist .main h2 {
+  font-size: 0;
+  height: 0;
+  width: 0;
+  line-height: 0.0;
+  position:absolute;
+  left: -9999px;
+  overflow: hidden
+}
+
+.adBox, .adContainer, .adDiv, .adElement, .adHolder, .adModule, .adSpace, .adSummary, .adText, .adTitle, .adWrapper, .ad_Right, .ad_block, .ad_body, .ad_left, .ad_left_block, .ad_links, .ad_right, .ad_space, .ad_text, .ad_top_panel, .adbg, .adblockcenter, .addiv, .adframe, .adhere, .adhered, .adholder, .adi, .adinfo, .adlabel, .adleft, .adlist, .admarker, .adpic, .adprice, .adright, .ads739x90, .ads_ban, .adsenseblock, .adtable, .adv-post, .advBrand, .adv_bl, .adv_to_hide_holder, .advert-horizontal, .advert__banner, .advert_list, .advertise, .advertisement:not(body) {}
+
+#pun-admain label, div#pun-admain .adlabel {font-size: 12px;font-family: verdana;}
+
+.button {
+    cursor: pointer;
+}
+
+
+
+
+/* Основа */
+html body {
+    background: var(--body);
+    font-family: 'dewberry';
+    font-size: 15px;
+    color: #353333;
+}
+
+#pun {
+    position: relative;
+    margin: auto;
+    width: 998px;
+    background: var(--pun);
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+#pun-main{
+  width: 978px;
+}
+
+#html-footer {
+    height: 65px;
+    background: var(--main);
+    margin: 0px 10px 0px 10px;
+}
+ 
+
+hr {
+    border: none;
+    border-top: 1px solid #bbbbbb;
+}
+
+/* шапка */
+#pun-title {
+    background: url(http://forumstatic.ru/files/001b/b6/34/79990.gif) center top no-repeat scroll transparent;
+    height: 430px;
+    width: 1100px;
+    margin-left: -50px;
+    position: relative;
+    border-bottom: 1px solid var(--pun);
+}
+
+#pun-title:before {
+  content: '';
+  display: block;
+  height: 170px;
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  border: 1px var(--pun);
+  border-style: solid none none solid;
+}
+
+#pun-title:after {
+  content: '';
+  display: block;
+  height: 270px;
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px var(--pun);
+  border-style: solid solid none none;
+}
+
+/* Название форума */
+#pun-title h1 {
+    position: relative;
+    top: 337px;
+    font-family: 'Bebas Neue';
+    font-size: 55px;
+    font-weight: unset;
+    color: var(--pun);
+    text-align: center;
+}
+
+#pun-title h1:after {
+  content: 'very impressive or very difficult, and perhaps somewhat frightening';
+  position: relative;
+  display: block;
+  top: -5px;
+  font-family: 'Bebas Neue';
+  font-size: 21px;
+  font-weight: unset;
+  color: #bcbcbc;
+}
+
+
+/* общий вид ссылок */
+
+a {
+    color: #252422;
+    font-family: 'dewberry';
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover, a:focus, a:active {
+    color: #606060;
+    font-weight: 100;
+}
+
+/* Навигация */
+#pun-navlinks {
+   background: var(--body);
+   text-align: center;
+   padding: 0px 0;
+   height: 36px;
+}
+
+#pun-navlinks li {
+    display: inline;
+    padding: 0 0.5em;
+}
+#pun-navlinks li a {
+    font-size: 28px;
+    color: var(--pun);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+}
+
+#pun-navlinks li a:hover {
+    color: #b8b8b8;
+    font-weight: 100;
+}
+#pun-navlinks li#navadmin span {
+    font-size: 0;
+}
+
+#pun-navlinks li#navadmin span:after {
+    content: "Админка";
+    font-size: 28px;
+}
+
+#pun-ulinks {
+    text-align: center;
+}
+#pun-ulinks li {
+    display: inline; 
+    padding: 0 0.3em;
+}
+    
+#pun-ulinks li a {
+    font-family: 'dewberry';
+    color: var(--body);
+    font-size: 12px;
+}
+#pun-ulinks li a:hover {
+    color: #919191;
+}
+
+#pun-navlinks #navawards {
+    display: none;
+}
+
+/* пути */
+
+#pun-crumbs1, #pun-crumbs2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  position: relative;
+  z-index: 10;
+  width: 995px;
+  text-align: center;
+}
+
+#pun-crumbs1 a, #pun-crumbs2 a {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+}
+#pun-crumbs1 {
+    top: 20px;
+    left: 15px;
+    margin-bottom: 30px;
+}
+
+#pun-crumbs2 {
+  background: var(--main);
+  padding-top: 15px;
+  width: 978px;
+}
+
+/* ################################ Главная страница  ############################*/
+
+
+#pun .category .container table {
+    background: var(--main);
+    width: 975px;
+    padding: 10px;
+}
+
+#pun .category table thead {
+  display:none;
+}
+
+#pun .category tr {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#pun .category td {
+    display: inline-block;
+}
+
+#pun .category td.tcr {
+    width: calc(40% - 30px);
+    padding: 2px;
+    text-align: right;
+}
+
+#pun .category .tcl {
+    width: calc(60% - 10px);
+    padding: 0;
+    min-height: 140px;
+    position: relative;
+}
+
+
+#pun-main .category td.tc2,
+#pun-main .category td.tc3 {
+    position: absolute;
+    color: #252422;
+    bottom: 0;
+}
+
+#pun-main .category td.tc2 {right: 160px;}
+#pun-main .category td.tc3 {right: 20px;}
+#pun-main .category td.tc2:before {content: 'Тем: ';}
+#pun-main .category td.tc3:before {content: 'Сообщений: ';}
+
+#pun-main .category td.tcr .lastpost {
+    display: block;
+    max-width: calc(100% - 75px);
+}
+
+
+#pun-main .category td.tcr a, #pun-main .category td.tcl .tclcon h3 a{
+    text-transform: uppercase;
+    font-family: 'BebasNeue Book';
+    font-size: 20px;
+}
+
+#pun-main .category td.tcl .tclcon h3 {
+    background: var(--pun);
+    padding-top: 3px;
+}
+
+#pun-main .category td.tcl .tclcon h3 a {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+
+
+/* Иконки */
+.category div.icon,
+.category TR.inew Div.icon,
+.forum TR.inew Div.icon {
+    float: left;
+    width: 10px;
+    height: 40px;
+    position: relative;
+    left: -10px;
+}
+
+Div.icon {
+    background: var(--main);
+}
+
+TR.inew Div.icon {
+    background: var(--body);
+}
+
+TR.isticky Div.icon {
+    background: #8c8686;
+}
+
+TR.iclosed Div.icon {
+    background: #595757;
+}
+
+/* количество непрочитанных тем у иконки */
+.icon[data-new-topics]:before, .subforums span[data-new-topics]:before {
+    background-color: var(--body) !important;
+    top: 42px;
+    right: 6px;
+    z-index: 1;
+    font-size: 7px !important;
+    border-radius: 0 !important;
+}
+
+
+
+/* Миниатюра аватара */
+.punbb .user-avatar {
+    float: right;
+    position:relative;
+    height:55px; 
+    width:55px;
+    margin: 1px 0px 2px 20px;
+}
+
+.punbb .user-avatar a {
+    padding:0!important; 
+    background:none transparent!important;
+}
+.punbb .user-avatar .avatar-image {
+    height:55px; 
+    width:55px; 
+    opacity:0.5; 
+    filter: grayscale(100%);
+    background-position:center center; 
+    background-size:cover; 
+    background-repeat:no-repeat; 
+    float:right;
+}
+
+.punbb .user-avatar .avatar-image:hover {
+    opacity:1;
+    filter: grayscale(20%);
+}
+.punbb .user-avatar .isonline {
+    width:8px; 
+    height:8px; 
+    display:block; 
+    position:absolute; 
+    bottom:0; 
+    right:0px; 
+    animation:blinkColor .9s linear infinite; 
+    -moz-animation:blinkColor .9s linear infinite; 
+    -webkit-animation:blinkColor .9s linear infinite; 
+    background:#252422; 
+    z-index:100
+}
+
+
+
+/* категории */
+.category h2, #pun-stats h2, #pun-main h1 {
+    text-align: center;
+}
+
+
+.category h2 span, #pun-stats h2 span, #pun-main h1 span{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.category h2:before, #pun-stats h2:before, #pun-main h1:before {
+    content: '';
+    font-size: 12px;
+    display: block;
+    width: 585px;
+    margin: 20px 0 0 393px;
+    padding: 5px;
+    border-bottom: 1px solid var(--body);
+    text-align: right;
+}
+#pun-main table h1:before {
+  display: none;
+}
+
+#pun-category2.category h2:before {content: 'Отказаться от мечты проще, чем достичь её... Впрочем, создавать всегда сложнее, чем разрушать.';}
+#pun-category3.category h2:before {content: 'Если боишься проиграть, просто стань сильнее. Если не способен защитить своих друзей, поклянись стать сильнее и защитить их. Если боишься пустого внутри себя, становись сильнее, пока не сокрушишь его.';}
+#pun-category4.category h2:before {content: 'Повторяется ли история, или она просто есть? И если это круг, следует ли нам его разорвать или оставить всё, как есть?';}
+#pun-category5.category h2:before {content: 'Схожие цели рождаются из схожих интересов.';}
+#pun-category6.category h2:before {content: 'Быть частью команды — значит знать о способностях каждого. Ты не можешь знать, полезен или нет, пока не попробуешь. Но если ты не можешь поверить в силы своих друзей, мы не сможем сражаться.';}
+#pun-stats h2:before {content: 'Мы не имеем права лить слёзы, иначе тело подчинится сердцу. Это будет доказательством того, что наше сердце не подчинится никаким приказам.';}
+
+
+
+
+
+/* Статистика */
+
+#pun-stats .statscon  {
+    text-align: right;
+    background: var(--main);
+    margin: 10px 10px 0 10px;
+    position: relative;
+}
+
+#pun-stats .statscon li.item1, #pun-stats .statscon li.item2, #pun-stats .statscon li.item3, #pun-stats .statscon li.item4 {
+    display: inline-block;
+    min-width: 150px;
+    background: var(--pun);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 23px;
+    margin: 10px 0 10px -4px;
+    padding: 6px 3px 0px 3px;
+    color: var(--body);
+    text-align: center;
+}
+
+#pun-stats .statscon li.item4 {
+    padding-right: 10px;
+}
+
+#pun-stats .statscon li.item3 span, #pun-stats .statscon li.item4 span {
+    font-size: 0px;
+}
+
+#pun-stats .statscon li.item3 span:after, #pun-stats .statscon li.item4 span:after {
+    content: '';
+    font-size: 23px;
+}
+
+#pun-stats .statscon li.item3 span:after {content: 'Участников: ';}
+#pun-stats .statscon li.item4 span:after {content: 'С нами: ';}
+
+#pun-stats .statscon li strong {
+    font-weight: 100;
+}
+
+#pun-stats .statscon li.item4 a {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 23px;
+    color: var(--body);
+}
+
+#pun-stats .statscon li#onlinelist {
+    text-align: left;
+    margin: 10px;
+    padding: 10px 10px 20px;
+}
+
+
+/* ################################ Список тем в форуме ############################*/
+#pun-main.multipage .forum table thead tr th {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 28px;
+    font-weight: 300;
+    padding: 15px 0;
+}
+
+#pun-main.multipage .forum table tr td {
+    background: var(--main);
+    border: 5px var(--pun);
+    border-style: solid none;
+}
+
+
+#pun-main.multipage .forum table tr td.tc3, #pun-main.multipage .forum table tr td.tc2 {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+
+#pun-main.multipage .forum table tr td.tcr {
+    width: 350px;
+}
+
+#pun-main.multipage .forum table tr td .user-avatar {
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin: 1px 20px 2px 1px;
+}
+
+#pun-main.multipage .forum table tr td .user-avatar .avatar-image {
+    height: 30px;
+    width: 30px;
+}
+
+#pun-main.multipage .forum table tr td .icon {
+    display: table-cell;
+    width: 7px;
+    height: 35px;
+    position: relative;
+    top: -1px;
+    left: auto;
+}
+
+#pun-main.multipage .forum table tr td .tclcon {
+   padding-left: 10px;
+}
+
+#pun-main.multipage .forum table tr td .tclcon, 
+#pun-main.multipage .forum table tr td.tc3, 
+#pun-main.multipage .forum table tr td.tc2,
+#pun-main.multipage .forum table tr td.tcr {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#pun-main.multipage .forum table  {
+      border-spacing: 0 !important;
+   margin: 0;
+   padding: 0;
+}
+
+#pun-main.multipage .forum table .intd {
+    margin-bottom: -4px;
+}
+
+span.stickytext, span.closedatafield {
+    display: none;
+}
+
+#pun-main.multipage .forum table tr td .tclcon span.newtext {
+    display: none;
+}
+
+/* ################################ Экран постов  ############################*/
+
+.punbb .post .post-author {
+  float: left;
+  width: 250px;
+  overflow: hidden;
+  }
+
+.punbb .post-body {
+  margin-left: 260px;
+  padding: 0;
+  }
+
+.punbb .post-box {
+  padding: 2em 1em 1em 1em;
+  margin-top: 4px;
+  font-family: sans-serif;
+}
+
+
+/* цитата, код и т.п. */
+.code-box, .quote-box {
+    background: var(--main);
+    margin: 10px;
+    padding: 15px;
+}
+
+.code-box .legend {
+  display: inline-block;
+  margin: 0px 0 10px -15px;
+  padding: 2px 10px;
+  font-size: 10px;
+  color: var(--main);
+  background: var(--body);
+}
+
+#pun .code-box .legend a {
+  color: var(--main);
+}
+#pun .code-box .legend a:hover {
+  filter: brightness(1.1);
+}
+
+.post-content .spoiler-box blockquote {
+  padding: 15px !important;
+}
+
+
+/* Заголовки */
+#pun-main.multipage {
+    position: relative;
+}
+
+#pun-main.multipage .linkst {
+    background: var(--main);
+    padding: 1px 5px;
+}
+
+
+
+#pun-main.multipage .linkst .postlink span, #pun-main.multipage .linksb span {
+    background: var(--main);
+    padding: 3px 5px;
+}
+
+
+#pun-main.multipage .linkst .postlink {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
+#pun-main.multipage .topic a.sharelink {
+    display: none;
+}
+
+#pun-main.multipage .linksb .postlink {
+    display: none;
+}
+
+#pun-main.multipage .linkst .postlink span, #pun-main.multipage .linksb span {
+    background: var(--main);
+    padding: 3px 5px;
+}
+
+#pun-main.multipage .linkst .postlink span.new-topic, #pun-main.multipage .linksb span.new-topic {
+    margin-right: 15px;
+}
+
+#pun-main.multipage .modmenu p.container strong {
+    background: var(--main);
+    display: inline-block;
+    padding: 3px;
+    margin: 20px 0;
+}
+
+#pun-main.multipage .modmenu p.container span {
+    display: none;
+}
+
+
+#pun-main.multipage .topic .post h3 {
+    background: var(--main);
+    position: relative;
+    margin: 10px 0;
+}
+
+#pun-main.multipage .topic .post.topicpost h3 {
+  background:none;
+  top: -28px;
+}
+
+#pun-main.multipage .post h3 strong {
+    float: right;
+    margin-right: 10px;
+}
+
+#pun-main.multipage .topic .post h3 span a.permalink {
+    position: relative;
+    left: 200px;
+}
+
+#pun-main.multipage .post h3 strong:before {
+    content: 'Пост: ';
+}
+
+/* кнопки под постом */
+.post-links {
+    position: relative;
+    bottom: 0px;
+    text-align: right;
+    margin: 10px;
+}
+
+.post-links li {
+    display: inline-block;
+    padding: 4px 9px;
+}
+
+.post-links li.pl-delete,
+.post-links li.pl-edit, 
+.post-links li.pl-quote {
+    background: var(--body);
+}
+
+.post-links li.pl-delete a,
+.post-links li.pl-edit a, 
+.post-links li.pl-quote a {
+  color: var(--pun);
+}
+
+.post-links li a {
+    font-family: 'dewberry';
+    font-size: 14px;
+}
+
+
+
+.pl-email, .pl-website {
+    float: left;
+}
+
+#pun-main.multipage .linksb .subscribelink {
+    float: right;
+    position: relative;
+    bottom: -25px;
+    right: -75px;
+    font-family: 'Bebas Neue';
+}
+
+ #pun-main.multipage .linksb .pagelink {
+    display: inline-block;
+}
+
+#pun-main.multipage .linksb .subscribelink a {
+    font-family: 'BebasNeue Book';
+    font-size: 16px;
+}
+.pagelink {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* оценка поста */
+.post-box .post-content {
+    margin-bottom: 50px;
+    min-height: 420px;
+}
+.post div.container {
+    position: relative;
+    padding-left: 7px;
+}
+
+.post-body .post-box .post-rating {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.post-body .post-box .post-vote {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+
+
+.post-body .post-box .post-rating a {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+
+
+.post-body .post-box .post-vote a {
+    font-size: 20px;
+}
+
+/* мод меню и активные */
+div#topic-modmenu, div#topic-users-in {
+    display: inline-block;
+    margin: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#topic-modmenu #mod-options {
+    background: var(--main);
+    border: none;
+    padding: 0;
+}
+
+#topic-modmenu, #topic-modmenu #mod-options, #topic-users-in, #topic-users-in a {
+    font-family: 'BebasNeue Book';
+    font-size: 15px;
+}
+
+
+/* форма ответа */
+#pun-main #post-form h2 {
+    text-align: center;
+}
+
+#pun-main #post-form h2 span {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#pun-main #post-form h2:before {
+    content: '';
+    font-size: 12px;
+    display: block;
+    width: 585px;
+    margin: 20px 0 0 393px;
+    padding: 5px;
+    border-bottom: 1px solid var(--body);
+    text-align: right;
+}
+
+
+#pun-main #post-form #post fieldset {
+    position: relative;
+    border: none;
+}
+
+#pun-main #post-form #post fieldset legend,
+#pun-main #post-form #post fieldset legend small#plng {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+
+#pun-main #post-form #post fieldset legend {
+    background: var(--main);
+    width: 100%;
+    margin: 10px 0;
+    padding: 3px 5px;
+    text-align: left;
+}
+
+#pun-main #post-form #post fieldset legend small#plng {
+    float: right;
+}
+
+
+.input textarea {
+    border: none;
+    background: var(--main);
+    
+}
+
+.resizable-textarea textarea {
+    font-family: auto;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#pun-main #post-form #post .formsubmit {
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+
+input.button {
+    background: var(--main);
+    border: none;
+    padding: 5px 10px 0px 10px;
+    margin: 5px;
+    font-family: 'BebasNeue Book';
+    font-size: 20px;
+}
+
+textarea#image-area-tinp, textarea#video-area-tinp {
+    width: 96%;
+    background: var(--pun);
+}
+
+
+/* ################################ СТРАНИЦА ПРОФИЛЯ  ############################*/
+
+div#viewprofile-next #profilenav {
+    display:none;
+}
+
+#pun-main #viewprofile {
+    margin: 20px 15px;
+}
+
+#pun-main #viewprofile #profile-left {
+    display: flex;
+    width: 240px;
+    outline: 1px solid var(--body);
+    outline-offset: 10px;
+    background: var(--body);
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: var(--pun);
+    flex-direction: column;
+}
+
+#pun-main #viewprofile #profile-left #profile-title {
+    order: 1;
+    width: 100%;
+    margin: 10px 0;
+    background: var(--pun);
+    color: var(--body);
+}
+
+
+#pun-main #viewprofile #profile-left #profile-name {
+    order: 2;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+#pun-main #viewprofile #profile-left #profile-name strong {
+  font-weight: 100;
+}
+
+
+#pun-main #viewprofile #profile-left #pa-avatar {
+    order: 3;
+    position: relative;
+    margin-bottom: 10px;
+}
+#pun-main #viewprofile #profile-left #pa-avatar img {
+    position: relative;
+}
+
+#pun-main #viewprofile #profile-left #pa-avatar:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 15px;
+    bottom: 3px;
+    border: 1px var(--pun);
+    border-style: none solid solid;
+}
+
+#pun-main #viewprofile #profile-left #pa-avatar:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    width: 210px;
+    height: 55%;
+    border: 1px var(--pun);
+    border-style: solid solid none;
+}
+
+#pun-main #viewprofile #profile-left #pa-online {
+    order: 5;
+padding: 10px;
+}
+
+#pun-main #viewprofile #profile-left #pa-edit {
+    order: 4;
+    width: 100%;
+    background: var(--pun);
+    color: var(--body);
+    padding: 5px 0;
+}
+#pun-main #viewprofile #profile-left #pa-edit a {
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+
+#pun-main #viewprofile #profile-left #pa-edit strong {
+    vertical-align: middle;
+}
+
+#pun-main #viewprofile #profile-right {
+    outline: 1px solid var(--body);
+    outline-offset: 10px;
+    line-height: 2;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+#pun-main #viewprofile #profile-right a {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#pun-main #viewprofile #profile-right strong {
+    font-weight: 100;
+}
+
+#pun-main #viewprofile #profile-right #pa-fld1 {
+    background: var(--body);
+    width: 260px;
+    color: var(--pun);
+    font-family: 'dewberry';
+    line-height: 16px;
+    padding: 10px;
+    margin: 0;
+}
+
+#pun-main #viewprofile #profile-right #pa-fld1 span {
+    display: none;
+}
+#pun-main #viewprofile #profile-right #pa-fld1 a {
+    font-style: italic;
+    color: var(--pun);
+}
+
+div#profile-signature {
+    margin-top: 15px;
+}
+
+
+/* ################################ УЧАСТНИКИ  ############################*/
+.formal .inline .inputfield, .formal .inline .selectfield, .formal .inline .passfield {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.punbb textarea, .punbb select, .punbb input, .adinput {
+    background: var(--main);
+    border: 0;
+    padding: 10px 5px;
+}
+.punbb textarea:focus-visible, .punbb select:focus-visible, .punbb input:focus-visible, .adinput:focus-visible {
+    border: none;
+    outline: none;
+}
+
+
+input.button {
+    font-family: 'BebasNeue Book';
+    padding: 5px;
+}
+
+.punbb .formal fieldset {
+    padding: 25px 25px 45px 25px;
+    border: 1px solid var(--body);
+}
+
+.punbb .formal fieldset legend {
+    font-family: 'BebasNeue Book';
+    font-size: 20px;
+}
+
+form#userlist {
+    margin: 20px 0 0 0;
+}
+
+#userlist fieldset p label {
+    display: block;
+    width: 100%;
+    background: var(--main);
+    font-family: 'BebasNeue Book';
+    text-align: center;
+    padding: 4px 10px;
+}
+
+#userlist fieldset p:nth-child(4).selectfield label {
+    padding: 4px 0 !important;
+}
+
+#userlist p.formsubmit {
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+
+.usertable table thead tr th {
+    font-family: 'BebasNeue Book';
+    font-size: 18px;
+}
+
+.usertable table, #messages .fs-box table {
+    border-spacing: 0 10px;
+}
+
+.usertable table tbody tr, #messages .fs-box table tbody tr {
+    background: var(--main);
+}
+
+.usertable table tbody tr td, #messages .fs-box table tbody tr td {
+    text-align: center;
+}
+
+.usertable table tbody tr em.user-avatar, #messages .fs-box table tbody tr em.user-avatar {
+    float: left;
+    height: 35px; 
+    width: 35px;
+    margin: 3px 5px;
+}
+
+.usertable table tbody tr em.user-avatar a span.avatar-image, #messages .fs-box table tbody tr em.user-avatar a span.avatar-image {
+    height: 35px;
+    width: 35px;
+    opacity: 1;
+}
+
+.usertable table tbody tr .username .usersname, #messages .fs-box table tbody tr td.tc2 {
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+.usertable table tbody tr td.username {
+    text-align: justify;
+}
+
+#profilenav h2 {
+    display:none;
+}
+
+#profilenav ul {
+    margin: 15px 0;
+}
+
+#profilenav ul li {
+    display: inline-block;
+    background: var(--main);
+    padding: 5px;
+}
+
+
+#profilenav ul li a {
+    font-family: 'BebasNeue Book';
+    font-size: 15px;
+}
+
+
+#profile fieldset {
+    position:relative;
+}
+#profile fieldset legend small#plng {
+    width: max-content;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.fs-box .post-body {
+    width: 65% !important;
+}
+
+.fs-box .post h3 {
+    padding: 4px 10px;
+    margin: -10px 0 10px 0;
+    background-color: var(--body);
+    font-size: 10px;
+    color: var(--pun);
+    text-align: center;
+}
+
+
+/* ################################ Модалки  ############################*/
+
+#pun-report .inner, #pun-reputation .inner, #pun-admin-award-form .inner {
+    background: var(--pun);
+}
+
+
+#tags .container {
+    top: auto !important;
+    background-color: var(--main) !important;
+    border: 1px solid var(--tabt) !important;
+    padding: 5px;
+    overflow: auto;
+    max-height: 250px;
+}
+
+#mask_dialog .inner {
+  background: var(--pun);
+}
+
+
+
+/* всплавашка на ЛС */
+div#jGrowl {
+    position: fixed;
+    top: 2px;
+    right: 2px;
+    z-index: 99;
+    color: var(--pun);
+}
+
+div#jGrowl .jGrowl-notification {}
+
+button.jGrowl-close {
+    margin: 1px !important;
+    padding: 2px !important;
+    line-height: 9px;
+    background: var(--tabt);
+} 
+
+
+/* точечная мелочевка */
+#login > p.formsubmit {
+    margin-left: 20px;
+}
+
+del {
+    text-decoration: none;
+    filter: blur(2px)
+}
+
+del:hover {
+    filter: blur(0px);
+    text-decoration: none!important;
+    border: none!important;
+}
+
+
+#login > p.formsubmit {
+    margin-left: 20px;
+}
+
+del {
+    text-decoration: none;
+    filter: blur(2px)
+}
+
+del:hover {
+    filter: blur(0px);
+    text-decoration: none!important;
+    border: none!important;
+}
+
+.post-box span.qc-post-link img {
+    filter: grayscale(1);
+}
+
+.post-box blockquote {
+    margin: 10px 0 0 5px;
+}
+
+#pun-admain1 form.adcontainer, #pun-admain2 form.adcontainer, #pun-admain-new form.adcontainer, #pun-admain1 div.adcontainer, #pun-admain2 div.adcontainer {
+    padding: 16px 8px 12px !important;
+    
+}
+#pun-admain span[class="adinput"] input:not([type="radio"]), #pun-admain input:not([type="radio"]), #pun-admain span[class="adinput"] input:not([type="checkbox"]), #pun-admain input:not([type="checkbox"]), #pun-admain input:not([type="submit"]), #pun-admain span[class="adinput"] label, #pun-admain textarea, #pun-admain select, #pun-admain optgroup {
+    width:100%;
+}
+
+#pun-admain input[type="submit"], #pun-admain input[type="checkbox"], #pun-admain input[type="radio"], #pun-admain p.submitend input.button, #pun-admain input.button{
+    width:auto !important;
+}
+#pun-admain input, #pun-admain select {width:auto;}
+
+#pun-admain fieldset .handle, #pun-admain fieldset p {
+    border-left-width: 20em;
+}
+#pun-admain .adlabel {
+    margin-left: -18em !important; 
+    width: 18em !important; 
+    padding-left: 1em; 
+    padding-right: 0em !important;
+}
+.punbb div.adminmain.post {
+    padding: 0 0 0 15em !important; 
+    margin-top:0px;
+    
+}
+#pun-adnav .isactive ul.adsubnav a {
+    border-bottom: none;
+}
+.award-edit {
+    margin-right: 1em !important;
+}
+
+
+
+
+#forum_f14 .forumDescription a {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+}
+
+#pun-category1, #forum_f5, #forum_f7, #forum_f27, #forum_f30 {
+    display: none !important;
+}
+
+/* ################ копирайт  ############*/
+div#copyright {
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+}
+
+div#copyright a{
+    color: rgb(159 159 159);
+    text-shadow: 1px 1px 1px rgb(255 255 255 / 60%);
+}
