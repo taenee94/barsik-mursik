@@ -1,22 +1,19 @@
-@import url(12.22_[Vigrid2]\style_cs.css);
+@import url('style_cs.css');
 
-@font-face {
-    font-family: 'BuyanRegular';
-    src: url('http://forumstatic.ru/files/001b/b6/34/55683.ttf');
-    font-style: normal;
-}
 @font-face {
     font-family: 'ArsenalRegular';
-    src: url('http://forumstatic.ru/files/001b/b6/34/45777.ttf');
+    src: url('../fonts/ArsenalRegular.ttf');
     font-style: normal;
 }
-
 @font-face {
     font-family: 'BuyanThin';
     src: url('http://forumstatic.ru/files/001b/b6/34/93293.ttf?v=1');
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'BuyanRegular';
+    src: url('../fonts/BuyanRegular.ttf');
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
