@@ -1,0 +1,8 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+body .portfolio table img {
+    width: 100%;
+}
