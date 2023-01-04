@@ -610,18 +610,6 @@
 				</div>
 				<!--/noindex-->
 
-				<div class="section"
-					style="border:0 !important;max-width:100%;text-align:center; overflow:hidden;display:flex;justify-content:center;max-height:250px;overflow:hidden;">
-					<!-- Yandex.RTB R-A-1623045-3 -->
-					<div id="yandex_rtb_R-A-1623045-3" style="max-height:250px; overflow:hidden;"></div>
-					<script>window.yaContextCb.push(() => {
-							Ya.Context.AdvManager.render({
-								renderTo: 'yandex_rtb_R-A-1623045-3',
-								blockId: 'R-A-1623045-3'
-							})
-						})</script>
-				</div>
-
 				<!-- banner_bottom -->
 
 				<div id="pun-break3" class="divider">
@@ -701,47 +689,7 @@
 						</div>
 
 						<!-- КОПИРАЙТ -->
-						<div id="copyright"><a href="http://barsmur.rusff.me/pages/barsik_and_mursik"
-								title="сделать заказ" target="_blank">Design by barsik&amp;mursik </a></div>
-
-						<!-- для импорта иконок и шрифтов -->
-						<link
-							href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;family=Material+Icons+Outlined"
-							rel="stylesheet">
-
-
-
-						<!-- тег абзаца -->
-						<style>
-							#button-indent {
-								background: url(https://forumupload.ru/uploads/001b/19/fa/2/377738.png) no-repeat center 6px !important;
-							}
-						</style>
-						<script type="text/javascript">(function () {
-								var b = '[indent]';
-								$("#button-strike").after('<td id="button-indent" title="отступы"><img src="/i/blank.gif"  onclick="insert(\'' + b + '\')"></td>');
-								var indent = '<span style="display: inline-block; margin: 0em 2.1em;"></span>';
-								$('.post-content p:contains("' + b + '")').each(function () { $(this).html($(this).html().replace(/\[indent\]/gm, indent)); });
-							}());
-						</script>
-
-						<!--замена коротких тире на длинные -->
-						<script>$('.post-content p').html(function () { return this.innerHTML.replace(/(\s| )?-(\s| )/g, '$1—$2') })</script>
-
-
-						<!-- юзер-панель-->
-						<script type="text/javascript">
-							if (UserAvatar == "") { UserAvatar = "http://forumupload.ru/uploads/001b/b6/34/3/465303.jpg" }
-							var arr = document.getElementsByTagName("div")
-							i = 0
-							while (arr[i]) {
-								if (arr[i].id == "u-panel") {
-									name = arr[i].innerHTML
-									name = name.substring(0)
-									arr[i].innerHTML = "<div id=option><a href='/profile.php?section=avatar&id=" + UserID + "' title='Изменить аватарку'><img src=" + UserAvatar + "></a></div>" + name
-								} i++
-							}
-						</script>
+						<div id="copyright"><a href="http://barsmur.rusff.me/pages/barsik_and_mursik" title="сделать заказ" target="_blank">Design by barsik&amp;mursik </a></div>
 
 						<script type="text/javascript">
 							//отключение лишнего функционала
@@ -752,53 +700,7 @@
 							RusffCore.sets.show_reportBtn = 0;
 							RusffCore.sets.rusff_smilepack = 0;
 							$('#pun-ulinks ul').prepend('<li class="item1"><a href="/search.php?action=show_new">Новые сообщения</a></li>');
-
-							//Убрать сокращатель ссылок
-							FORUM.set("editor.link.short_url", function () { return false; });
-
-							//Кликабельность ника в постах Гостя 
-							$(".post[data-group-id=3]").find(".pa-author").html(function () { return this.innerHTML.replace(/(<.+>)(.+)$/, '$1<a href="javascript:to(\'$2\')">$2</a>') });
-
-							//Счетчик символов
-							var a, L, epl = $("#main-reply"), str = '<small id="plng"">Символов: <b>00</b> </small>'; epl.parents("fieldset").find("legend").prepend(str); function epl3() { a = epl.val().length; if (a > 9) { L = '' } else { L = '0' }; $("#plng b").text(L + a) }; epl3(); $(".pl-quote").click(function () { setTimeout('epl3()', 100) }); epl.bind('mouseout mousemove keydown keypress keyup', function (e) { epl3() });
-
-							//Аватарs по умолчанию
-							var g = '<li class="pa-avatar item2"><img class="defavtr" src="http://forumupload.ru/uploads/001b/b6/34/3/465303.jpg" alt="гость"/></li>';
-							$("li.pa-title").each(function () {
-								if (($(this).parent("ul").find("li.pa-avatar").html()) == null) {
-									if (($(this).html()) == "Гость") {
-										$(this).after(g);
-									};
-								};
-							});
-
-
-							//Регулировка размера шрифта в постах © Alex_63
-							if ($('#pun-viewtopic').length) { document.write('<script type="text/javascript" src="http://forumstatic.ru/files/0015/c4/3f/31001.js"><\/script>'); }
-						</script>
-
-						<!--------- КНОПКИ ВВЕРХ_ВНИЗ ------------->
-						<div id="upDown">
-							<div class="go-up" id="ToTop" style="display: none;"> </div>
-							<div class="go-down" id="OnBottom" style="display: block;"></div>
-						</div>
-
-						<script type="text/javascript">
-							$(function () {
-								if ($(window).scrollTop() >= "250") $("#ToTop").fadeIn("slow")
-								$(window).scroll(function () {
-									if ($(window).scrollTop() <= "250") $("#ToTop").fadeOut("slow")
-									else $("#ToTop").fadeIn("slow")
-								});
-								if ($(window).scrollTop() <= $(document).height() - "999") $("#OnBottom").fadeIn("slow")
-								$(window).scroll(function () {
-									if ($(window).scrollTop() >= $(document).height() - "999") $("#OnBottom").fadeOut("slow")
-									else $("#OnBottom").fadeIn("slow")
-								});
-								$("#ToTop").click(function () { $("html,body").animate({ scrollTop: 0 }, "slow") })
-								$("#OnBottom").click(function () { $("html,body").animate({ scrollTop: $(document).height() }, "slow") })
-							});
-						</script>
+                        </script>
 
 					</div>
 				</div>
