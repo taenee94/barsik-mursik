@@ -510,10 +510,12 @@ div#episode {
 }
 div#activ img, div#episode img, #need1 img, #need2 img {
   filter: opacity(0.5);
+  margin: 2px 0;
 }
 
 div#activ img:hover, div#episode img:hover, #need1 img:hover, #need2 img:hover {
     filter: opacity(1);
+    margin: 2px 0;
 }
 
 div#nav {
