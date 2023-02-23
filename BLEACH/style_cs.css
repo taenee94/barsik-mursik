@@ -493,7 +493,7 @@ div#html-header div#bestPost .body {
 
 
 div#activists {
-  right: 70px;
+  right: 112px;
   top: 199px;
   display: flex;
 }
@@ -508,10 +508,7 @@ div#activists img:hover {
   filter: grayscale(0);
 }
 
-div#episode {
-right: 70px;
-top: 245px;
-}
+div#episode {right: 107px;top: 245px;}
 div#episode:before {
   content: 'The best';
   color: var(--pun);
@@ -582,35 +579,4 @@ width: 600px;
 max-height: 245px;
 overflow-y: auto;
 }
-
-
-
-/* ################################ гостевая  ############################*/
-
-#p5 .post-author {display: none;}
-#p5 .post-body {margin: 0;}
-table.guest, table.guest td {
-  background: var(--main);
-  border: none !important;
-}
-
-table.guest {
-  background: var(--main);
-}
-
-table.guest .guestblock {
-  background: var(--pun);
-  height: 170px;
-  width: 300px;
-  overflow-y: auto;
-  margin: 10px 30px 15px 30px !important;
-}
-
-table.guest span {
-  font-family: 'BebasNeue Book';
-  font-size: 22px;
-  text-align: center;
-  display: block;
-}
-
 

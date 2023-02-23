@@ -149,7 +149,8 @@ p[class="checkfield"] *, div[class="checkfield"] *, fieldset[class="radiofield"]
 #similar-topics td.st-tc2 {width:25%; padding-right:1em; text-align:right}
 #similar-topics td.st-tcr {width:15%; padding-right:1em; text-align:right}
 li.pa-ua {margin-top: 0.7em; display: flex; justify-content: center;}
-#pun-online .tcl.action {width:60%
+#pun-online .tcl.action {
+    width:60%;
     padding-left: 30px;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -204,7 +205,6 @@ html body {
 #html-footer {
     height: 65px;
     background: var(--main);
-    margin: 0px 10px 0px 10px;
 }
  
 
@@ -1316,8 +1316,6 @@ div#jGrowl {
     color: var(--pun);
 }
 
-div#jGrowl .jGrowl-notification {}
-
 button.jGrowl-close {
     margin: 1px !important;
     padding: 2px !important;
@@ -1400,18 +1398,6 @@ del:hover {
     margin-right: 1em !important;
 }
 
-
-
-
-#forum_f14 .forumDescription a {
-    position: absolute;
-    top: 4px;
-    right: 15px;
-}
-
-#pun-category1, #forum_f5, #forum_f7, #forum_f27, #forum_f30 {
-    display: none !important;
-}
 
 /* ################ копирайт  ############*/
 div#copyright {
