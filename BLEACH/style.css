@@ -205,7 +205,6 @@ html body {
 #html-footer {
     height: 65px;
     background: var(--main);
-    margin: 0px 10px 0px 10px;
 }
  
 
@@ -1399,18 +1398,6 @@ del:hover {
     margin-right: 1em !important;
 }
 
-
-
-
-#forum_f14 .forumDescription a {
-    position: absolute;
-    top: 4px;
-    right: 15px;
-}
-
-#pun-category1, #forum_f5, #forum_f7, #forum_f27, #forum_f30 {
-    display: none !important;
-}
 
 /* ################ копирайт  ############*/
 div#copyright {
