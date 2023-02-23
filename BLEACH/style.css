@@ -149,7 +149,8 @@ p[class="checkfield"] *, div[class="checkfield"] *, fieldset[class="radiofield"]
 #similar-topics td.st-tc2 {width:25%; padding-right:1em; text-align:right}
 #similar-topics td.st-tcr {width:15%; padding-right:1em; text-align:right}
 li.pa-ua {margin-top: 0.7em; display: flex; justify-content: center;}
-#pun-online .tcl.action {width:60%
+#pun-online .tcl.action {
+    width:60%;
     padding-left: 30px;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -1315,8 +1316,6 @@ div#jGrowl {
     z-index: 99;
     color: var(--pun);
 }
-
-div#jGrowl .jGrowl-notification {}
 
 button.jGrowl-close {
     margin: 1px !important;
